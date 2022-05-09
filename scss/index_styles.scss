@@ -1,0 +1,132 @@
+/*
+    Developer: Cameron Liddell A.K.A MintyMonster 
+    Github: https://github.com/MintyMonster
+    Instagram: https://www.instagram.com/cameronliddelldev/
+    Contact: cameronliddelldev@gmail.com
+
+*/
+
+
+// Variables
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Source Code Pro', monospace;
+
+$purpleLighter: rgba(232, 192, 255, 1);
+$purpleLight: rgba(218, 151, 254, 1);
+$purple: rgba(204, 112, 255, 1);
+$purpleDark: rgba(192, 78, 254, 1);
+$purpleDarker: rgba(164, 0, 255, 1);
+
+$grey: rgba(20, 20, 20, 1);
+$white: rgba(255, 255, 255, 0.7);
+
+// Navigation bar
+
+.main-menu {
+    background: #212121;
+    border-right: 1px solid #e5e5e5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 80px;
+    overflow: hidden;
+    z-index: 1000;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    &>.socials {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        li {
+            &:hover .insta-a {
+                color: #212121;
+                background: $white;
+            }
+
+            &:hover .github-a {
+                color: #212121;
+                background: $white;
+            }
+        }
+    }
+
+    .nav-icon {
+        font-size: 2em;
+        position: relative;
+        display: table-cell;
+        width: 80px;
+        height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: max(1.2vw, 20px);
+    }
+
+    ul,
+    li {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    &>ul {
+        margin: 7px 0;
+    }
+
+    li {
+        position: relative;
+        display: block;
+        width: 250px;
+        margin-top: 10px;
+
+        &:hover .home-a {
+            color: #fff;
+            background: $purpleLighter;
+        }
+
+        &:hover .portfolio-a {
+            color: #fff;
+            background: $purpleLight;
+        }
+
+        &:hover .about-me-a {
+            color: #fff;
+            background: $purple;
+        }
+
+        &:hover .contact-a {
+            color: #fff;
+            background: $purpleDark;
+        }
+
+        &:hover .enquiry-a {
+            color: #fff;
+            background: $purpleDarker;
+        }
+
+        &>a {
+            position: relative;
+            display: table;
+            border-collapse: collapse;
+            border-spacing: 0;
+            color: #999;
+            font-family: arial;
+            font-size: 14px;
+            text-decoration: none;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}

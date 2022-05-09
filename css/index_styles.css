@@ -1,0 +1,99 @@
+/*
+    Developer: Cameron Liddell A.K.A MintyMonster 
+    Github: https://github.com/MintyMonster
+    Instagram: https://www.instagram.com/cameronliddelldev/
+    Contact: cameronliddelldev@gmail.com
+
+*/
+.main-menu {
+  background: #212121;
+  border-right: 1px solid #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  width: 80px;
+  overflow: hidden;
+  z-index: 1000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.main-menu > .socials {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.main-menu > .socials li:hover .insta-a {
+  color: #212121;
+  background: rgba(255, 255, 255, 0.7);
+}
+.main-menu > .socials li:hover .github-a {
+  color: #212121;
+  background: rgba(255, 255, 255, 0.7);
+}
+.main-menu .nav-icon {
+  font-size: 2em;
+  position: relative;
+  display: table-cell;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: max(1.2vw, 20px);
+}
+.main-menu ul,
+.main-menu li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+.main-menu > ul {
+  margin: 7px 0;
+}
+.main-menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+  margin-top: 10px;
+}
+.main-menu li:hover .home-a {
+  color: #fff;
+  background: rgb(232, 192, 255);
+}
+.main-menu li:hover .portfolio-a {
+  color: #fff;
+  background: rgb(218, 151, 254);
+}
+.main-menu li:hover .about-me-a {
+  color: #fff;
+  background: rgb(204, 112, 255);
+}
+.main-menu li:hover .contact-a {
+  color: #fff;
+  background: rgb(192, 78, 254);
+}
+.main-menu li:hover .enquiry-a {
+  color: #fff;
+  background: rgb(164, 0, 255);
+}
+.main-menu li > a {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #999;
+  font-family: arial;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.main-menu li > a:hover, .main-menu li > a:focus {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index_styles.css.map */
