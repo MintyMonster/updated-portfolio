@@ -5,10 +5,42 @@
     Contact: cameronliddelldev@gmail.com
 
 */
+html {
+  scroll-behavior: smooth !important;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.arrow-container {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  position: absolute;
+}
+.arrow-container .down-icon {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: max(2vw, 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.arrow-container .down-icon:hover {
+  transform: scale(1.2);
+}
+
 .main-menu {
   background: #212121;
-  border-right: 1px solid #e5e5e5;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   height: 100%;
@@ -16,11 +48,6 @@
   width: 80px;
   overflow: hidden;
   z-index: 1000;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
 .main-menu > .socials {
   position: absolute;
@@ -36,14 +63,13 @@
   background: rgba(255, 255, 255, 0.7);
 }
 .main-menu .nav-icon {
-  font-size: 2em;
   position: relative;
   display: table-cell;
   width: 80px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
-  font-size: max(1.2vw, 20px);
+  font-size: max(1.2vw, 30px);
 }
 .main-menu ul,
 .main-menu li {
@@ -94,6 +120,64 @@
 }
 .main-menu li > a:hover, .main-menu li > a:focus {
   text-decoration: none;
+}
+
+.main {
+  width: 100vw;
+  perspective: 2px;
+}
+.main .header-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(232, 192, 255);
+  background: url("https://user-images.githubusercontent.com/78669960/168137576-2b24171f-bdb8-4b60-91c8-6dffb3472dd2.png") center center/cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.main .header-section .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.main .header-section .header-content .header-title {
+  font-family: "Poppins", sans-serif;
+  font-size: max(4vw, 40px);
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+.main .header-section .header-content .header-subtitle {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Source Code Pro", monospace;
+  font-size: max(1.1vw, 12px);
+  margin-top: -25px;
+}
+.main .portfolio-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(218, 151, 254);
+}
+.main .about-me-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(204, 112, 255);
+}
+.main .contact-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(192, 78, 254);
+}
+.main .enquiry-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(164, 0, 255);
 }
 
 /*# sourceMappingURL=index_styles.css.map */
